@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries Detail</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/24ac146632.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav_container">
+        <!-- <div> -->
+    <nav class="navbar">
+        <h2>Where is in the world?</h2>
+        <button class="dark_mode" onclick="darkMode()"><i class="fa-regular fa-moon"></i>
+            Dark Mode</button>
+    </nav>
+    <!-- </div> -->
+    </div>
+    <!-- <div class="search_container"> -->
+    <div class="search-bar">
+        <input type="text" id="country_search" placeholder="Search for a country..." onchange="countryChange()">
+        <select id="region_select"  onchange="regionChange()">
+
+            <option value="all" selected>Filter by Region</option>
+            <option value="asia">Asia</option>
+            <option value="africa">Africa</option>
+            <option value="america">America</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+          
+        </select>
+    </div>
+    <!-- </div> -->
+    <div class="container">
+        <div class="wrong">
+            
+        </div>
+        <!-- <button id="back_btn"><i class="fa-solid fa-arrow-left-long"></i> Back</button> -->
+    <!-- <div class="country">
+    <img class="country__img" src="https://flagcdn.com/w320/in.png" />
+<div class="country__data">
+    <h3 class="country__name">India</h3>
+    <p class="country__row">Population: 1380004385</p>
+    <p class="country__row">Region: Asia</p>
+    <p class="country__row">Capital: New Delhi</p>
+  </div>
+  </div> -->
+    <!-- <div class="country_details">
+        <img class="country_img" src="https://flagcdn.com/w320/in.png" />
+        <div class="country_data">
+            <h3 class="country_name">Belgium</h3>
+            <div class="content">
+            <div class="left_content">
+            <p class="country_row">Native Name: Belgie</p>
+            <p class="country_row">Population: 11,319,511</p>
+            <p class="country_row">Region: Europe</p>
+            <p class="country_row">Sub Region: Western Europe</p>
+            <p class="country_row">Capital: Brussels</p>
+           
+            </div>
+            <div class="right_content">
+                <p class="country_row">Top Level Domain:.be</p>
+                <p class="country_row">Curriencies: Euro</p>
+                <p class="country_row">Languages: Dutch,French,German</p>
+            </div>
+            </div>
+            <div class="border">Border Countries:
+                <button>France</button> 
+                <button>Germany</button> 
+                <button>Netherlands</button> 
+                </div>
+            </div>
+        </div> 
+    </div> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
