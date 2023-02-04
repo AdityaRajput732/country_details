@@ -99,6 +99,7 @@ nav {
 }
   .country_data{
     width: 30%;
+      margin: 0 25px;
   }
 .country_name{
     margin: 10px 0;
@@ -115,6 +116,18 @@ nav {
   .content {
     display: flex;
     justify-content: space-between;
+  }
+  @media only screen and (max-width: 655px){
+    .country_img{
+        width: 90%;
+        margin: 0 5px;
+       }
+       .country_row{
+        width: max-content;
+       }
+       .back {
+        margin: 100px 28px;
+       }
   }
   @media only screen and (max-width: 375px) {
     .search-bar{
